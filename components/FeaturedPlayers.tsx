@@ -1,9 +1,16 @@
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import { FEATURED_PLAYERS } from '../constants';
 import { User } from 'lucide-react';
 
 const FeaturedPlayers: React.FC = () => {
+  // Memoize the random selection so it doesn't change on every re-render (like scroll)
+  const displayedPlayers = useMemo(() => {
+    return [...FEATURED_PLAYERS]
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 4);
+  }, []);
+
   return (
     <section id="players" className="py-24 bg-white px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -22,7 +29,7 @@ const FeaturedPlayers: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {FEATURED_PLAYERS.map((player) => (
+          {displayedPlayers.map((player) => (
             <div key={player.id} className="group relative flex flex-col bg-neutral-50 border border-neutral-200 overflow-hidden rounded-lg hover:shadow-lg transition-all">
               <div className="aspect-[4/5] relative overflow-hidden">
                 <img 
@@ -30,11 +37,13 @@ const FeaturedPlayers: React.FC = () => {
                   alt={player.name} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute top-4 left-4">
-                  <span className="bg-lime-400 text-black font-black px-2 py-1 text-xs rounded-sm shadow-md">
-                    {player.title}
-                  </span>
-                </div>
+                {player.title && (
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-lime-400 text-black font-black px-2 py-1 text-xs rounded-sm shadow-md">
+                      {player.title}
+                    </span>
+                  </div>
+                )}
                 <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-white/90 to-transparent"></div>
               </div>
 

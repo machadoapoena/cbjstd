@@ -2,7 +2,7 @@
 export interface Player {
   id: string;
   name: string;
-  title: 'GM' | 'IM' | 'FM' | 'WGM';
+  title?: string;
   rating: number;
   category: string;
   image: string;
