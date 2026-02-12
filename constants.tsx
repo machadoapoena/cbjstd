@@ -34,11 +34,11 @@ export const DEFAULT_CATEGORY_COUNTS = [
 export const FEATURED_PLAYERS: Player[] = [
   { id: '1', name: 'Miguel Damasceno', title: 'CMN', rating: 2312, category: 'U18', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_damasceno.jpg' },
   { id: '2', name: 'Rafael Mazzochin', title: '', rating: 2309, category: 'U18', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_mazzochin.jpg' },
-  { id: '3', name: 'Arthur Ferreira Rocha', title: 'FM', rating: 2122, category: 'U16', image: 'https://picsum.photos/seed/arthur/400/500' },
-  { id: '4', name: 'Pedro Henrique Fernandes Macedo', title: 'FM', rating: 2108, category: 'U14', image: 'https://picsum.photos/seed/pedro/400/500' },
-  { id: '5', name: 'Gustavo Rodrigues', title: 'CM', rating: 2050, category: 'U18', image: 'https://picsum.photos/seed/gustavo/400/500' },
-  { id: '6', name: 'Beatriz Maria', title: 'WCM', rating: 1980, category: 'U16', image: 'https://picsum.photos/seed/beatriz/400/500' },
-  { id: '7', name: 'Enzo Oliveira', title: '', rating: 1850, category: 'U14', image: 'https://picsum.photos/seed/enzo/400/500' },
+  { id: '3', name: 'Leonardo Tosetto', title: 'FM', rating: 2122, category: 'U16', image: 'https://picsum.photos/seed/arthur/400/500' },
+  { id: '4', name: 'João Pedro', title: 'CMN', rating: 2108, category: 'U14', image: 'https://picsum.photos/seed/pedro/400/500' },
+  { id: '5', name: 'Larissa Alencar', title: 'WNM', rating: 2050, category: 'U18', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_larissa.jpg' },
+  { id: '6', name: 'Luiz Antônio', title: 'WCM', rating: 1980, category: 'U16', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_luizantonio.jpg' },
+  { id: '7', name: 'Vinícius Rodrigues', title: 'NM', rating: 1850, category: 'U14', image: 'https://picsum.photos/seed/enzo/400/500' },
   { id: '8', name: 'Julia Santos', title: 'WFM', rating: 2150, category: 'U18', image: 'https://picsum.photos/seed/julia/400/500' }
 ];
 
