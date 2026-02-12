@@ -1,31 +1,38 @@
 
-import { Player, Prize, ScheduleItem, Winner } from './types';
+import { Player, Prize, ScheduleItem, Winner } from './types.ts';
 
 export const TOURNAMENT_NAME = "CAMPEONATO BRASILIENSE";
 export const TOURNAMENT_EDITION = "STD JUVENIL";
 export const VENUE = "BRASÍLIA";
 export const VENUE_DETAILS = "Biblioteca Nacional de Brasília";
 export const DATE_RANGE = "22 - 27 DE FEVEREIRO";
-export const TOURNAMENT_START_DATE = "2026-02-22T10:00:00"; // Data para o cronômetro ajustada
+export const TOURNAMENT_START_DATE = "2026-02-22T10:00:00";
 export const TOTAL_PRIZE = "Troféus & Medalhas";
 export const CHESS_RESULTS_URL = "https://s1.chess-results.com/tnr1345366.aspx?lan=1";
 export const REGISTRATION_EXTERNAL_URL = "https://forms.gle/exemplo-inscricao-fbx";
 export const RULES_PDF_URL = "https://exemplo.com/regulamento.pdf";
 
-// Contact Details
 export const CONTACT_PHONE_DISPLAY = "+55 (61) 98765-4321";
 export const CONTACT_PHONE_WA = "5561987654321";
 export const CONTACT_EMAIL = "contato@fbx.org.br";
 
-// Payment Details
 export const PIX_KEY = "70696179172";
 
-// Registration Details
-export const PROMO_PRICE = "R$ 60,00";
-export const REGULAR_PRICE = "R$ 90,00";
+// Preços estruturados em 3 categorias
+export const PROMO_PRICES = {
+  underage: "R$ 40,00",
+  senior_women: "R$ 50,00",
+  standard: "R$ 60,00"
+};
+
+export const REGULAR_PRICES = {
+  underage: "R$ 60,00",
+  senior_women: "R$ 75,00",
+  standard: "R$ 90,00"
+};
+
 export const PROMO_DEADLINE = "10 de Fevereiro";
 
-// Precise counts extracted from the provided PDF document
 export const DEFAULT_PARTICIPANTS_COUNT = 59;
 export const DEFAULT_CATEGORY_COUNTS = [
   { label: 'U14', count: 5 },
@@ -34,38 +41,10 @@ export const DEFAULT_CATEGORY_COUNTS = [
 ];
 
 export const FEATURED_PLAYERS: Player[] = [
-  {
-    id: '1',
-    name: 'Luigy Lira De Siqueira',
-    title: 'FM',
-    rating: 2312,
-    category: 'U18',
-    image: 'https://picsum.photos/seed/luigy/400/500'
-  },
-  {
-    id: '2',
-    name: 'Lucas Aguiar Cunha',
-    title: 'FM',
-    rating: 2309,
-    category: 'U18',
-    image: 'https://picsum.photos/seed/lucas/400/500'
-  },
-  {
-    id: '3',
-    name: 'Arthur Ferreira Rocha',
-    title: 'FM',
-    rating: 2122,
-    category: 'U16',
-    image: 'https://picsum.photos/seed/arthur/400/500'
-  },
-  {
-    id: '4',
-    name: 'Pedro Henrique Fernandes Macedo',
-    title: 'FM',
-    rating: 2108,
-    category: 'U14',
-    image: 'https://picsum.photos/seed/pedro/400/500'
-  }
+  { id: '1', name: 'Luigy Lira De Siqueira', title: 'FM', rating: 2312, category: 'U18', image: 'https://picsum.photos/seed/luigy/400/500' },
+  { id: '2', name: 'Lucas Aguiar Cunha', title: 'FM', rating: 2309, category: 'U18', image: 'https://picsum.photos/seed/lucas/400/500' },
+  { id: '3', name: 'Arthur Ferreira Rocha', title: 'FM', rating: 2122, category: 'U16', image: 'https://picsum.photos/seed/arthur/400/500' },
+  { id: '4', name: 'Pedro Henrique Fernandes Macedo', title: 'FM', rating: 2108, category: 'U14', image: 'https://picsum.photos/seed/pedro/400/500' }
 ];
 
 export const PRIZES: Prize[] = [
@@ -75,22 +54,8 @@ export const PRIZES: Prize[] = [
 ];
 
 export const SCHEDULE: ScheduleItem[] = [
-  {
-    day: 'Dia 1',
-    date: '22/02',
-    events: [
-      { time: '10:00', description: 'Congresso Técnico' },
-      { time: '14:00', description: 'Rodada 1 - Sistema Suíço' }
-    ]
-  },
-  {
-    day: 'Dia 2',
-    date: '23/02',
-    events: [
-      { time: '10:00', description: 'Rodada 2' },
-      { time: '16:00', description: 'Rodada 3' }
-    ]
-  }
+  { day: 'Dia 1', date: '22/02', events: [{ time: '10:00', description: 'Congresso Técnico' }, { time: '14:00', description: 'Rodada 1 - Sistema Suíço' }] },
+  { day: 'Dia 2', date: '23/02', events: [{ time: '10:00', description: 'Rodada 2' }, { time: '16:00', description: 'Rodada 3' }] }
 ];
 
 export const WINNERS: Winner[] = [
