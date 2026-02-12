@@ -2,7 +2,7 @@
 import { Player, Prize, ScheduleItem, Winner } from './types.ts';
 
 export const TOURNAMENT_NAME = "CAMPEONATO BRASILIENSE";
-export const TOURNAMENT_EDITION = "STD JUVENIL";
+export const TOURNAMENT_EDITION = "DE CATEGORIAS";
 export const VENUE = "BRASÍLIA";
 export const VENUE_DETAILS = "Biblioteca Nacional de Brasília";
 export const DATE_RANGE = "22 - 27 DE FEVEREIRO";
