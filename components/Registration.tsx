@@ -93,7 +93,7 @@ const Registration: React.FC = () => {
 
             <div className="bg-white p-2 rounded-xl shadow-xl mb-6">
               <img 
-                src="https://cbc.xadrezbrasilia.com/images/qrcode.png" 
+                src="https://imagens.xadrezbrasilia.com/imagens/qrcode.png" 
                 alt="QR Code PIX FBX" 
                 className="w-32 h-32 md:w-40 md:h-40 object-contain" 
               />
