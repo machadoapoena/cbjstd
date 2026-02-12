@@ -18,18 +18,9 @@ export const CONTACT_EMAIL = "contato@fbx.org.br";
 
 export const PIX_KEY = "70696179172";
 
-// Preços estruturados em 3 categorias
-export const PROMO_PRICES = {
-  underage: "R$ 40,00",
-  senior_women: "R$ 50,00",
-  standard: "R$ 60,00"
-};
-
-export const REGULAR_PRICES = {
-  underage: "R$ 60,00",
-  senior_women: "R$ 75,00",
-  standard: "R$ 90,00"
-};
+// Valores únicos por lote
+export const PROMO_PRICE = "R$ 60,00";
+export const REGULAR_PRICE = "R$ 90,00";
 
 export const PROMO_DEADLINE = "10 de Fevereiro";
 
