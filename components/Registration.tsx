@@ -79,7 +79,7 @@ const Registration: React.FC = () => {
             </div>
           </div>
 
-          {/* Pagamento PIX - Agora como um card separado */}
+          {/* Pagamento PIX - Card Separado com QR Code atualizado */}
           <div className="relative group p-8 rounded-2xl bg-lime-400 text-black flex flex-col items-center text-center shadow-[0_0_50px_rgba(163,230,53,0.15)]">
             <div className="flex items-center gap-3 mb-6 self-start w-full">
               <div className="w-12 h-12 rounded-xl bg-black/10 flex items-center justify-center text-black">
@@ -91,11 +91,11 @@ const Registration: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-white p-3 rounded-xl shadow-xl mb-6">
+            <div className="bg-white p-2 rounded-xl shadow-xl mb-6">
               <img 
-                src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${PIX_KEY}`} 
-                alt="QR Code PIX" 
-                className="w-32 h-32 md:w-40 md:h-40" 
+                src="https://cbc.xadrezbrasilia.com/images/qrcode.png" 
+                alt="QR Code PIX FBX" 
+                className="w-32 h-32 md:w-40 md:h-40 object-contain" 
               />
             </div>
 

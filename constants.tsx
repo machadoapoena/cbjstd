@@ -16,7 +16,7 @@ export const CONTACT_PHONE_DISPLAY = "+55 (61) 98765-4321";
 export const CONTACT_PHONE_WA = "5561987654321";
 export const CONTACT_EMAIL = "contato@fbx.org.br";
 
-export const PIX_KEY = "70696179172";
+export const PIX_KEY = "00.359.752/0001-43";
 
 // Valores únicos por lote
 export const PROMO_PRICE = "R$ 60,00";
@@ -58,7 +58,7 @@ export const WINNERS: Winner[] = [
 export const PARTNERS = {
   realization: [
     { name: 'FBX', logo: 'https://i0.wp.com/fbx.org.br/wp-content/uploads/2022/05/Logo-FBX-1.png' },
-    { name: 'CBX', logo: 'https://cbx.org.br/wp-content/uploads/2023/04/cropped-favicon-cbx-192x192.png' }
+    { name: 'CBX', logo: 'https://cbx.org.br/files/textos/003659/TN_000965.jpg' }
   ],
   support: [
     { name: 'Governo do DF', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logotipo_do_Governo_do_Distrito_Federal.svg/512px-Logotipo_do_Governo_do_Distrito_Federal.svg.png' },
