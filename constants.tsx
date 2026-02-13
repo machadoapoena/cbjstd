@@ -54,9 +54,9 @@ export const SCHEDULE: ScheduleItem[] = [
 ];
 
 export const WINNERS: Winner[] = [
-  { year: '2023', name: 'Rafael Leitão', image: 'https://picsum.photos/seed/winner1/300/300', title: 'GM' },
-  { year: '2022', name: 'Alexandr Fier', image: 'https://picsum.photos/seed/winner2/300/300', title: 'GM' },
-  { year: '2021', name: 'Krikor Mekhitarian', image: 'https://picsum.photos/seed/winner3/300/300', title: 'GM' }
+  { year: '2025', name: 'Vinícius Rodrigues', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_vinicius.jpg', title: 'NM' },
+  { year: '2024', name: 'Pedro Sobral', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_pedrosobral.jpg', title: '' },
+  { year: '2024', name: 'Paulo Gonçalves', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_paulog.jpg', title: 'NM' }
 ];
 
 export const PARTNERS = {
