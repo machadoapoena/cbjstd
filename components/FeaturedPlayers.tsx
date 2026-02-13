@@ -20,7 +20,7 @@ const FeaturedPlayers: React.FC = () => {
               Jogadores <span className="text-lime-600">Destaque</span>
             </h2>
             <p className="text-neutral-500 max-w-xl">
-              As mentes mais brilhantes do tabuleiro confirmadas para esta edição histórica.
+              A nova geração de enxadristas confirmadas para esta edição histórica.
             </p>
           </div>
           <button className="px-8 py-3 bg-transparent border-2 border-neutral-200 text-neutral-900 font-bold rounded-sm hover:bg-neutral-900 hover:text-white transition-all">
