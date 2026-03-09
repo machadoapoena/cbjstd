@@ -13,7 +13,7 @@ export const REGISTRATION_EXTERNAL_URL = "https://forms.gle/exemplo-inscricao-fb
 export const RULES_PDF_URL = "https://drive.google.com/file/d/1kmq2t6IU3FC3F4Wi214h6JBEFi51HPXB/view?usp=sharing"; 
 
 export const CONTACT_PHONE_DISPLAY = "+55 (61) 98122-2312";
-export const CONTACT_PHONE_WA = "5561981222312";
+export const CONTACT_PHONE_WA = "556181484131";
 export const CONTACT_EMAIL = "camposwesterley@gmail.com";
 
 export const PIX_KEY = "00.359.752/0001-43";
