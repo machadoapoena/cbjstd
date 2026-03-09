@@ -13,7 +13,7 @@ import {
   RULES_PDF_URL
 } from './constants';
 import { ChevronDown, MapPin, Users, Trophy, ExternalLink, FileText } from 'lucide-react';
-import Logo from './Logo';
+import { Logo } from './Logo';
 
 const Hero: React.FC = () => {
   return (
