@@ -1,20 +1,12 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Campeonato Brasiliense STD Juvenil
 
-# Run and deploy your AI Studio app
+Página oficial do Campeonato Brasiliense de Xadrez STD Juvenil.
 
-This contains everything you need to run your app locally.
+## Updates
+- Refactored the project to use Vite for bundling and development.
+- Updated dependencies including React, Tailwind CSS, and Lucide React.
+- Removed inline styles and CDN links from `index.html`, favoring external CSS and a cleaner setup.
+- Organized components into the `src/` directory.
 
-View your app in AI Studio: https://ai.studio/apps/05f8abc1-301d-4a22-bb8d-b6a0138900ce
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Links
+- [AI Studio App](https://ais-pre-h7plppizurewmhj5wciuav-14398813845.us-east1.run.app)

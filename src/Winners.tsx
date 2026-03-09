@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { WINNERS } from './constants';
+import { WINNERS } from './constants.tsx';
 
 const Winners: React.FC = () => {
   return (
