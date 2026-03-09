@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
           <div className="flex flex-col items-center justify-center py-8 px-6">
             <span className="text-xs font-bold tracking-widest text-neutral-400 uppercase mb-2">Premiação</span>
             <div className="flex items-center gap-3">
-              <Trophy className="text-lime-600" size={24} />
+              <Trophy className="text-lime-600" size={23} />
               <span className="text-3xl font-oswald font-bold text-neutral-900 uppercase">{TOTAL_PRIZE}</span>
             </div>
           </div>
