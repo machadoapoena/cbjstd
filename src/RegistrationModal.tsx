@@ -50,7 +50,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose }
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
+ 
     try {
       let base64Image = '';
       if (file) {
@@ -58,7 +58,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose }
       }
 
       // 1. Send to Google Apps Script
-      const scriptUrl = "https://script.google.com/macros/s/AKfycbyOfUzfLRyIyUCKFfzZqpMXsNP1JU2B1QWBnEJPd3kCUIYhaUuwKPgOOwfmf7sBfeLO/exec";
+      const scriptUrl = "https://script.google.com/macros/s/AKfycbzg7IxNvGBLvrP_0GiGoQcxs2f4aDlZfU87SKqxxV1u7DVnINWWh-grqEW6qxU1puTc/exec";
       
       const payload = {
         nome: formData.nome,
