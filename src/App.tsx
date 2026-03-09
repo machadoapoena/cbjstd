@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import Countdown from './Countdown';
@@ -11,16 +11,19 @@ import Registration from './Registration';
 import Contact from './Contact';
 import Partners from './Partners';
 import Footer from './Footer';
+import RegistrationModal from './RegistrationModal';
 
 const App: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="min-h-screen">
-      <Navbar />
+      <Navbar onOpenRegistration={() => setIsModalOpen(true)} />
       <main>
         <Hero />
         <Countdown />
         <FeaturedPlayers />
-        <Registration />
+        <Registration onOpenRegistration={() => setIsModalOpen(true)} />
         <PrizeTable />
         <Schedule />
         <Winners />
@@ -28,6 +31,7 @@ const App: React.FC = () => {
         <Partners />
       </main>
       <Footer />
+      <RegistrationModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
 };

@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
             <div className="flex items-center gap-2 text-lime-600 font-bold tracking-wider mb-1">
               <span className="uppercase text-sm">{DATE_RANGE}</span>
             </div>
-            <span className="text-neutral-500 font-bold text-sm uppercase tracking-tighter">Primeira Rodada: 22 Fev</span>
+            <span className="text-neutral-500 font-bold text-sm uppercase tracking-tighter">Primeira Rodada: 28/03 09:30</span>
           </div>
         </div>
 

@@ -28,4 +28,5 @@ export interface Winner {
   name: string;
   image: string;
   title: string;
+  achievement: string;
 }

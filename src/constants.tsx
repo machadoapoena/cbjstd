@@ -4,17 +4,17 @@ import { Player, Prize, ScheduleItem, Winner } from './types';
 export const TOURNAMENT_NAME = "FESTIVAL BRASILIENSE";
 export const TOURNAMENT_EDITION = "DA CRIANÇA";
 export const VENUE = "BRASÍLIA";
-export const VENUE_DETAILS = "Em breve";
-export const DATE_RANGE = "28 - 28 DE MARÇO";
+export const VENUE_DETAILS = "Clube ASSEFE";
+export const DATE_RANGE = "28 - 29 DE MARÇO";
 export const TOURNAMENT_START_DATE = "2026-03-28T09:30:00";
 export const TOTAL_PRIZE = "Troféus & Medalhas";
 export const CHESS_RESULTS_URL = "https://s1.chess-results.com/tnr1345366.aspx?lan=1";
 export const REGISTRATION_EXTERNAL_URL = "https://forms.gle/exemplo-inscricao-fbx";
 export const RULES_PDF_URL = "https://exemplo.com/regulamento.pdf";
 
-export const CONTACT_PHONE_DISPLAY = "+55 (61) 98765-4321";
-export const CONTACT_PHONE_WA = "5561987654321";
-export const CONTACT_EMAIL = "contato@fbx.org.br";
+export const CONTACT_PHONE_DISPLAY = "+55 (61) 8148-4131";
+export const CONTACT_PHONE_WA = "556181484131";
+export const CONTACT_EMAIL = "camposwesterley@gmail.com";
 
 export const PIX_KEY = "00.359.752/0001-43";
 
@@ -24,39 +24,37 @@ export const REGULAR_PRICE = "R$ 90,00";
 
 export const PROMO_DEADLINE = "10 de Fevereiro";
 
-export const DEFAULT_PARTICIPANTS_COUNT = 59;
+export const DEFAULT_PARTICIPANTS_COUNT = "05";
 export const DEFAULT_CATEGORY_COUNTS = [
-  { label: 'U14', count: 5 },
-  { label: 'U16', count: 2 },
-  { label: 'U18', count: 1 }
+  { label: 'U08', count: 0 },
+  { label: 'U10', count: 1 },
+  { label: 'U12', count: 4 }
 ];
 
 export const FEATURED_PLAYERS: Player[] = [
-  { id: '1', name: 'Miguel Damasceno', title: 'CMN', rating: 2312, category: 'U18', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_damasceno.jpg' },
-  { id: '2', name: 'Rafael Mazzochin', title: '', rating: 2309, category: 'U18', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_mazzochin.jpg' },
-  { id: '3', name: 'Leonardo Tosetto', title: 'FM', rating: 2122, category: 'U16', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_leotosetto.jpg' },
-  { id: '4', name: 'João Pedro', title: 'CMN', rating: 2108, category: 'U14', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_joaobraz.jpg' },
-  { id: '5', name: 'Larissa Alencar', title: 'WNM', rating: 2050, category: 'U18', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_larissa.jpg' },
-  { id: '6', name: 'Luiz Antônio', title: 'WCM', rating: 1980, category: 'U16', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_luizantonio.jpg' },
-  { id: '7', name: 'Vinícius Rodrigues', title: 'NM', rating: 1850, category: 'U16', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_vinicius.jpg' },
-  { id: '8', name: 'Audrey Yuian', title: 'CMN', rating: 2150, category: 'U16', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_audrey.jpg' }
+  { id: '1', name: 'Luís Areda', title: '', rating: 0, category: 'U12', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_areda.jpg' },
+  { id: '2', name: 'Rafael Mazzochin', title: '', rating: 1512, category: 'U12', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_mazzochin.jpg' },
+  { id: '3', name: 'Leonardo Tosetto', title: '', rating: 1596, category: 'U12', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_leotosetto.jpg' },
+  { id: '4', name: 'João Pedro', title: 'CMN', rating: 1641, category: 'U12', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_joaobraz.jpg' },
+  { id: '5', name: 'Rafael Júnior', title: 'CMN', rating: 1605, category: 'U10', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_rafaelzinho.jpg' }
 ];
 
 export const PRIZES: Prize[] = [
-  { position: '1º Lugar', amount: 'Troféu', color: 'bg-yellow-500' },
+  { position: '1º Lugar', amount: 'Troféu + Voucher', color: 'bg-yellow-500' },
   { position: '2º Lugar', amount: 'Medalha', color: 'bg-slate-300' },
   { position: '3º Lugar', amount: 'Medalha', color: 'bg-amber-600' }
 ];
 
 export const SCHEDULE: ScheduleItem[] = [
-  { day: 'Dia 1', date: '22/02', events: [{ time: '10:00', description: 'Congresso Técnico' }, { time: '14:00', description: 'Rodada 1 - Sistema Suíço' }] },
-  { day: 'Dia 2', date: '23/02', events: [{ time: '10:00', description: 'Rodada 2' }, { time: '16:00', description: 'Rodada 3' }] }
+  { day: 'Dia 1', date: '28/03', events: [{ time: '09:00', description: 'Congresso Técnico' }, { time: '09:30', description: 'Rodada 1' }, { time: '13:30', description: 'Rodada 2' }, { time: '16:00', description: 'Rodada 3' }] },
+  { day: 'Dia 2', date: '29/03', events: [{ time: '09:30', description: 'Rodada 4' }, { time: '13:30', description: 'Rodada 5' }, { time: '16:00', description: 'Rodada 6' }] }
 ];
 
 export const WINNERS: Winner[] = [
-  { year: '2025', name: 'Vinícius Rodrigues', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_vinicius.jpg', title: 'NM' },
-  { year: '2024', name: 'Pedro Sobral', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_pedrosobral.jpg', title: '' },
-  { year: '2024', name: 'Paulo Gonçalves', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_paulog.jpg', title: 'NM' }
+  { year: '2025', name: 'Rafael Mazzochin', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_mazzochin.jpg', title: '', achievement: 'Categoria U12' },
+  { year: '2025', name: 'João Pedro', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_joaobraz.jpg', title: 'CMN', achievement: 'Categoria U10' },
+  { year: '2025', name: 'Rafel Júnior', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_rafaelzinho.jpg', title: 'CMN', achievement: 'Categoria U08' },
+  { year: '2025', name: 'Larissa Alencar', image: 'https://imagens.xadrezbrasilia.com/imagens/pl_larissa.jpg', title: 'WNM', achievement: 'Categoria U12' }
 ];
 
 export const PARTNERS = {
@@ -65,8 +63,8 @@ export const PARTNERS = {
     { name: 'CBX', logo: 'https://cbx.org.br/files/textos/003659/TN_000965.jpg' }
   ],
   support: [
-    { name: 'Governo do DF', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Logotipo_do_Governo_do_Distrito_Federal.svg/512px-Logotipo_do_Governo_do_Distrito_Federal.svg.png' },
-    { name: 'Secretaria de Cultura', logo: 'https://www.cultura.df.gov.br/wp-content/uploads/2021/08/logo_secretaria_cultura_economia_criativa.png' },
-    { name: 'Loja de Xadrez', logo: 'https://cdn-icons-png.flaticon.com/512/3003/3003168.png' }
+    { name: 'Don Durica', logo: 'https://www.dondurica.com.br/includes/imgs/imprensa/logoDDamostra.jpg' },
+    { name: 'Clube ASSEFE', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqs3GKOAaJ2-ercW3vP-Zhv3cIghuoHVWYXw&s' },
+    { name: 'Xadrez Brasília', logo: 'https://imagens.xadrezbrasilia.com/imagens/logo_xb.png' }
   ]
 };

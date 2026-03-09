@@ -1,9 +1,14 @@
 
 import React, { useState } from 'react';
-import { PROMO_PRICE, REGULAR_PRICE, PROMO_DEADLINE, REGISTRATION_EXTERNAL_URL, PIX_KEY } from './constants';
-import { Calendar, ExternalLink, Timer, Copy, Check, Users, Landmark } from 'lucide-react';
+import { PROMO_PRICE, REGULAR_PRICE, PROMO_DEADLINE, PIX_KEY } from './constants';
+import { Calendar, Timer, Copy, Check, Users, Landmark, FileText } from 'lucide-react';
+import RegistrationModal from './RegistrationModal';
 
-const Registration: React.FC = () => {
+interface RegistrationProps {
+  onOpenRegistration: () => void;
+}
+
+const Registration: React.FC<RegistrationProps> = ({ onOpenRegistration }) => {
   const [copied, setCopied] = useState(false);
 
   const copyPixKey = () => {
@@ -113,10 +118,13 @@ const Registration: React.FC = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <a href={REGISTRATION_EXTERNAL_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 px-12 py-5 bg-lime-400 text-black font-black uppercase text-lg rounded-full hover:bg-white transition-all shadow-[0_0_30px_rgba(163,230,53,0.3)] hover:scale-105 active:scale-95">
+          <button 
+            onClick={onOpenRegistration}
+            className="inline-flex items-center justify-center gap-3 px-12 py-5 bg-lime-400 text-black font-black uppercase text-lg rounded-full hover:bg-white transition-all shadow-[0_0_30px_rgba(163,230,53,0.3)] hover:scale-105 active:scale-95 cursor-pointer"
+          >
             Preencher Formulário de Inscrição
-            <ExternalLink size={20} />
-          </a>
+            <FileText size={20} />
+          </button>
           <p className="mt-8 text-neutral-500 text-[10px] font-black uppercase tracking-[0.3em]">Obrigatório anexar o comprovante no formulário</p>
         </div>
       </div>

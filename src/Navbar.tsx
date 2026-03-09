@@ -4,7 +4,11 @@ import { Menu, X } from 'lucide-react';
 import { TOURNAMENT_NAME } from './constants';
 import { Logo } from './Logo';
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  onOpenRegistration: () => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ onOpenRegistration }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -32,7 +36,7 @@ const Navbar: React.FC = () => {
         <a href="#home" className="flex items-center gap-3">
           <Logo size={40} className="text-neutral-900" />
           <span className="font-oswald text-xl font-bold italic tracking-tighter uppercase text-neutral-900 leading-none">
-            {TOURNAMENT_NAME.split(' ')[1]} <span className="text-lime-600">DE CATEGORIAS</span>
+            {TOURNAMENT_NAME.split(' ')[1]} <span className="text-lime-600">DA CRIANÇA</span>
           </span>
         </a>
 
@@ -47,9 +51,12 @@ const Navbar: React.FC = () => {
               {link.name}
             </a>
           ))}
-          <a href="#registration" className="bg-lime-400 text-black font-black px-6 py-2 rounded-sm text-xs uppercase hover:bg-black hover:text-white transition-all inline-block">
+          <button 
+            onClick={onOpenRegistration}
+            className="bg-lime-400 text-black font-black px-6 py-2 rounded-sm text-xs uppercase hover:bg-black hover:text-white transition-all inline-block cursor-pointer"
+          >
             INSCREVA-SE
-          </a>
+          </button>
         </div>
 
         {/* Mobile Toggle */}
@@ -71,9 +78,15 @@ const Navbar: React.FC = () => {
               {link.name}
             </a>
           ))}
-          <a href="#registration" onClick={() => setIsOpen(false)} className="bg-lime-400 text-black font-black w-full py-4 rounded-sm text-sm uppercase text-center">
+          <button 
+            onClick={() => {
+              setIsOpen(false);
+              onOpenRegistration();
+            }}
+            className="bg-lime-400 text-black font-black w-full py-4 rounded-sm text-sm uppercase text-center cursor-pointer"
+          >
             INSCREVA-SE AGORA
-          </a>
+          </button>
         </div>
       </div>
     </nav>
