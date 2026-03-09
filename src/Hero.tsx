@@ -11,9 +11,9 @@ import {
   DEFAULT_PARTICIPANTS_COUNT,
   DEFAULT_CATEGORY_COUNTS,
   RULES_PDF_URL
-} from './constants.tsx';
+} from './constants';
 import { ChevronDown, MapPin, Users, Trophy, ExternalLink, FileText } from 'lucide-react';
-import Logo from './Logo.tsx';
+import Logo from './Logo';
 
 const Hero: React.FC = () => {
   return (

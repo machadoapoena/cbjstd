@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { PRIZES } from './constants.tsx';
+import { PRIZES } from './constants';
 import { Trophy, Medal } from 'lucide-react';
 
 const PrizeTable: React.FC = () => {

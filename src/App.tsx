@@ -1,16 +1,16 @@
 
 import React from 'react';
-import Navbar from './Navbar.tsx';
-import Hero from './Hero.tsx';
-import Countdown from './Countdown.tsx';
-import PrizeTable from './PrizeTable.tsx';
-import Winners from './Winners.tsx';
-import Schedule from './Schedule.tsx';
-import FeaturedPlayers from './FeaturedPlayers.tsx';
-import Registration from './Registration.tsx';
-import Contact from './Contact.tsx';
-import Partners from './Partners.tsx';
-import Footer from './Footer.tsx';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import Countdown from './Countdown';
+import PrizeTable from './PrizeTable';
+import Winners from './Winners';
+import Schedule from './Schedule';
+import FeaturedPlayers from './FeaturedPlayers';
+import Registration from './Registration';
+import Contact from './Contact';
+import Partners from './Partners';
+import Footer from './Footer';
 
 const App: React.FC = () => {
   return (

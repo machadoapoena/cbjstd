@@ -1,6 +1,6 @@
 
 import React, { useMemo } from 'react';
-import { FEATURED_PLAYERS } from './constants.tsx';
+import { FEATURED_PLAYERS } from './constants';
 import { User } from 'lucide-react';
 
 const FeaturedPlayers: React.FC = () => {

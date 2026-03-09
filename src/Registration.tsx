@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { PROMO_PRICE, REGULAR_PRICE, PROMO_DEADLINE, REGISTRATION_EXTERNAL_URL, PIX_KEY } from './constants.tsx';
+import { PROMO_PRICE, REGULAR_PRICE, PROMO_DEADLINE, REGISTRATION_EXTERNAL_URL, PIX_KEY } from './constants';
 import { Calendar, ExternalLink, Timer, Copy, Check, Users, Landmark } from 'lucide-react';
 
 const Registration: React.FC = () => {

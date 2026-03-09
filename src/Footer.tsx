@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { Instagram, Twitter, Youtube, Facebook } from 'lucide-react';
-import { TOURNAMENT_NAME } from './constants.tsx';
-import Logo from './Logo.tsx';
+import { TOURNAMENT_NAME } from './constants';
+import Logo from './Logo';
 
 const Footer: React.FC = () => {
   return (

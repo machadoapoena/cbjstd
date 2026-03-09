@@ -1,5 +1,5 @@
 
-import { Player, Prize, ScheduleItem, Winner } from './types.ts';
+import { Player, Prize, ScheduleItem, Winner } from './types';
 
 export const TOURNAMENT_NAME = "FESTIVAL BRASILIENSE";
 export const TOURNAMENT_EDITION = "DA CRIANÇA";

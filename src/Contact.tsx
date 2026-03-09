@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Send, MessageSquare, Phone, Mail } from 'lucide-react';
-import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE_WA, TOURNAMENT_NAME } from './constants.tsx';
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE_WA, TOURNAMENT_NAME } from './constants';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
