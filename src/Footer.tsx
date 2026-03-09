@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-center gap-4 mb-8">
           <Logo size={60} className="text-neutral-900" />
           <span className="font-oswald text-2xl font-bold italic tracking-tighter uppercase text-neutral-900 text-center">
-            {TOURNAMENT_NAME} <span className="text-lime-600 block">DA CRIANÇA</span>
+            {TOURNAMENT_NAME} <span className="text-lime-600 block">DA CRIANÇA STD</span>
           </span>
         </div>
 

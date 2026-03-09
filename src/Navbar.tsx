@@ -36,7 +36,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenRegistration }) => {
         <a href="#home" className="flex items-center gap-3">
           <Logo size={40} className="text-neutral-900" />
           <span className="font-oswald text-xl font-bold italic tracking-tighter uppercase text-neutral-900 leading-none">
-            {TOURNAMENT_NAME.split(' ')[1]} <span className="text-lime-600">DA CRIANÇA</span>
+            {TOURNAMENT_NAME.split(' ')[1]} <span className="text-lime-600">DA CRIANÇA STD</span>
           </span>
         </a>
 

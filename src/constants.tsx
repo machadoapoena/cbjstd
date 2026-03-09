@@ -2,7 +2,7 @@
 import { Player, Prize, ScheduleItem, Winner } from './types';
 
 export const TOURNAMENT_NAME = "FESTIVAL BRASILIENSE";
-export const TOURNAMENT_EDITION = "DA CRIANÇA";
+export const TOURNAMENT_EDITION = "DA CRIANÇA STD";
 export const VENUE = "BRASÍLIA";
 export const VENUE_DETAILS = "Clube ASSEFE";
 export const DATE_RANGE = "28 - 29 DE MARÇO";
@@ -12,8 +12,8 @@ export const CHESS_RESULTS_URL = "https://s1.chess-results.com/tnr1345366.aspx?l
 export const REGISTRATION_EXTERNAL_URL = "https://forms.gle/exemplo-inscricao-fbx";
 export const RULES_PDF_URL = "https://exemplo.com/regulamento.pdf";
 
-export const CONTACT_PHONE_DISPLAY = "+55 (61) 8148-4131";
-export const CONTACT_PHONE_WA = "556181484131";
+export const CONTACT_PHONE_DISPLAY = "+55 (61) 98122-2312";
+export const CONTACT_PHONE_WA = "5561981222312";
 export const CONTACT_EMAIL = "camposwesterley@gmail.com";
 
 export const PIX_KEY = "00.359.752/0001-43";

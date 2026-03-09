@@ -91,18 +91,8 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose }
         `*Categoria:* ${formData.categoria}%0A%0A` +
         `_Por favor, anexe o comprovante de pagamento a seguir._`;
 
-      // Send to primary contact
-      const waUrl1 = `https://wa.me/${CONTACT_PHONE_WA}?text=${message}`;
-      // Send copy to secondary contact
-      const waUrl2 = `https://wa.me/5561981222312?text=${message}`;
-
-      // Open primary contact
-      window.open(waUrl1, '_blank');
-      
-      // Small delay to open the second one if possible (browsers might block multiple popups)
-      setTimeout(() => {
-        window.open(waUrl2, '_blank');
-      }, 500);
+      const waUrl = `https://wa.me/${CONTACT_PHONE_WA}?text=${message}`;
+      window.open(waUrl, '_blank');
 
       setIsSubmitted(true);
     } catch (error) {
