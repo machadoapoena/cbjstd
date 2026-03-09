@@ -58,7 +58,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose }
       }
 
       // 1. Send to Google Apps Script
-      const scriptUrl = "https://script.google.com/macros/s/AKfycbzg7IxNvGBLvrP_0GiGoQcxs2f4aDlZfU87SKqxxV1u7DVnINWWh-grqEW6qxU1puTc/exec";
+      const scriptUrl = "https://script.google.com/macros/s/AKfycbzk8GhB8s0pE6lDBYRWEe2cFETRVGtXCaXT6aXhGUQ4tNHoG5f450W8Oc09H0nBBlyQ/exec";
       
       const payload = {
         nome: formData.nome,
