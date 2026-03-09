@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Instagram, Twitter, Youtube, Facebook } from 'lucide-react';
-import { TOURNAMENT_NAME } from '../constants';
+import { TOURNAMENT_NAME } from './constants';
 import Logo from './Logo';
 
 const Footer: React.FC = () => {

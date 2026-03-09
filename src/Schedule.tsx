@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { SCHEDULE } from '../constants';
+import { SCHEDULE } from './constants';
 import { Clock, CalendarDays } from 'lucide-react';
 
 const Schedule: React.FC = () => {

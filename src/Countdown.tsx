@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { TOURNAMENT_START_DATE } from '../constants';
+import { TOURNAMENT_START_DATE } from './constants';
 
 const Countdown: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState({

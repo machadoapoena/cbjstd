@@ -1,12 +1,12 @@
 
 import { Player, Prize, ScheduleItem, Winner } from './types.ts';
 
-export const TOURNAMENT_NAME = "CAMPEONATO BRASILIENSE";
-export const TOURNAMENT_EDITION = "DE CATEGORIAS";
+export const TOURNAMENT_NAME = "FESTIVAL BRASILIENSE";
+export const TOURNAMENT_EDITION = "DA CRIANÇA";
 export const VENUE = "BRASÍLIA";
-export const VENUE_DETAILS = "Biblioteca Nacional de Brasília";
-export const DATE_RANGE = "22 - 27 DE FEVEREIRO";
-export const TOURNAMENT_START_DATE = "2026-02-22T10:00:00";
+export const VENUE_DETAILS = "Em breve";
+export const DATE_RANGE = "28 - 28 DE MARÇO";
+export const TOURNAMENT_START_DATE = "2026-03-28T09:30:00";
 export const TOTAL_PRIZE = "Troféus & Medalhas";
 export const CHESS_RESULTS_URL = "https://s1.chess-results.com/tnr1345366.aspx?lan=1";
 export const REGISTRATION_EXTERNAL_URL = "https://forms.gle/exemplo-inscricao-fbx";
