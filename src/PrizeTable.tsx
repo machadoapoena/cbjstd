@@ -16,10 +16,10 @@ const PrizeTable: React.FC = () => {
         </div>
         
         <p className="text-center text-neutral-500 font-bold uppercase text-xs tracking-widest mb-12">
-          Válida para todas as categorias (U14, U16 e U18)
+          Válida para todas as categorias (U06, U08, U10 e U12)
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {PRIZES.map((prize, idx) => (
             <div 
               key={idx}

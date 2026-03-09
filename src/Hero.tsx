@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
           className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-neutral-400 hover:text-lime-600 transition-colors"
         >
           <ExternalLink size={10} />
-          Ver Lista Completa no Chess-Results.com
+          Ver Lista Completa no Chess-Results.com (em Breve)
         </a>
       </div>
 
@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
             <div className="flex items-center gap-2 text-lime-600 font-bold tracking-wider mb-1">
               <span className="uppercase text-sm">{DATE_RANGE}</span>
             </div>
-            <span className="text-neutral-500 font-bold text-sm uppercase tracking-tighter">Primeira Rodada: 28/03 09:30</span>
+            <span className="text-neutral-500 font-bold text-sm uppercase tracking-tighter">Primeira Rodada: 28/03 09:00</span>
           </div>
         </div>
 

@@ -58,7 +58,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose }
       }
 
       // 1. Send to Google Apps Script
-      const scriptUrl = "https://script.google.com/macros/s/AKfycbzqqgvUCDjeYxhmw180pkjwtbOcPNVFnubi4gq1KsS2niNgQ1SFsHhHEcBZ6WcP64so/exec";
+      const scriptUrl = "https://script.google.com/macros/s/AKfycbyOfUzfLRyIyUCKFfzZqpMXsNP1JU2B1QWBnEJPd3kCUIYhaUuwKPgOOwfmf7sBfeLO/exec";
       
       const payload = {
         nome: formData.nome,
@@ -178,6 +178,7 @@ const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose }
                       onChange={handleChange}
                       className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-lime-400 focus:ring-1 focus:ring-lime-400 outline-none transition-all appearance-none"
                     >
+                      <option value="U06" className="bg-neutral-900">U06</option>
                       <option value="U08" className="bg-neutral-900">U08</option>
                       <option value="U10" className="bg-neutral-900">U10</option>
                       <option value="U12" className="bg-neutral-900">U12</option>

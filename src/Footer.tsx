@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="text-center">
-          <p className="text-neutral-500 text-sm mb-2">© 2024 Federação Brasiliense de Xadrez (FBX). Todos os direitos reservados.</p>
+          <p className="text-neutral-500 text-sm mb-2">© 2024 Xadrez Brasília Eventos. Todos os direitos reservados.</p>
           <p className="text-neutral-400 text-xs font-bold uppercase tracking-widest">Brasília - Distrito Federal</p>
         </div>
       </div>

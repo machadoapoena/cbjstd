@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { PROMO_PRICE, REGULAR_PRICE, PROMO_DEADLINE, PIX_KEY } from './constants';
+import { PROMO_PRICE, REGULAR_PRICE, PROMO_DEADLINE, PROMO2_PRICE, PROMO2_DEADLINE, PROMO3_DEADLINE, PIX_KEY } from './constants';
 import { Calendar, Timer, Copy, Check, Users, Landmark, FileText } from 'lucide-react';
 import RegistrationModal from './RegistrationModal';
 
@@ -67,7 +67,7 @@ const Registration: React.FC<RegistrationProps> = ({ onOpenRegistration }) => {
               </div>
               <div>
                 <h3 className="font-oswald text-xl font-bold uppercase">Lote Regular</h3>
-                <p className="text-neutral-400 text-xs font-bold uppercase tracking-widest">Após {PROMO_DEADLINE}</p>
+                <p className="text-neutral-400 text-xs font-bold uppercase tracking-widest">Após {PROMO3_DEADLINE}</p>
               </div>
             </div>
 
