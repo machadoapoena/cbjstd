@@ -1,6 +1,6 @@
 
 import React, { useMemo } from 'react';
-import { FEATURED_PLAYERS } from './constants';
+import { FEATURED_PLAYERS, CHESS_RESULTS_URL } from './constants';
 import { User } from 'lucide-react';
 
 const FeaturedPlayers: React.FC = () => {
@@ -23,9 +23,14 @@ const FeaturedPlayers: React.FC = () => {
               A nova geração de enxadristas confirmadas para esta edição histórica.
             </p>
           </div>
-          <button className="px-8 py-3 bg-transparent border-2 border-neutral-200 text-neutral-900 font-bold rounded-sm hover:bg-neutral-900 hover:text-white transition-all">
+          <a 
+            href={CHESS_RESULTS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 bg-transparent border-2 border-neutral-200 text-neutral-900 font-bold rounded-sm hover:bg-neutral-900 hover:text-white transition-all inline-block text-center"
+          >
             VER TODOS INSCRITOS
-          </button>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

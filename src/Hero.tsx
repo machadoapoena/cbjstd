@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
           className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-neutral-400 hover:text-lime-600 transition-colors"
         >
           <ExternalLink size={10} />
-          Ver Lista Completa no Chess-Results.com (em Breve)
+          Ver Lista Completa no Chess-Results.com
         </a>
       </div>
 

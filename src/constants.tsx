@@ -8,7 +8,7 @@ export const VENUE_DETAILS = "Clube ASSEFE";
 export const DATE_RANGE = "28 - 29 DE MARÇO";
 export const TOURNAMENT_START_DATE = "2026-03-28T09:30:00";
 export const TOTAL_PRIZE = "Troféus & Medalhas";
-export const CHESS_RESULTS_URL = "https://chess-results.com/Default.aspx?lan=1&SNode=S1";
+export const CHESS_RESULTS_URL = "https://s1.chess-results.com/tnr1371152.aspx?lan=10&SNode=S0";
 export const REGISTRATION_EXTERNAL_URL = "https://forms.gle/exemplo-inscricao-fbx";
 export const RULES_PDF_URL = "https://drive.google.com/file/d/1kmq2t6IU3FC3F4Wi214h6JBEFi51HPXB/view?usp=sharing"; 
 
@@ -27,12 +27,12 @@ export const PROMO_DEADLINE = "15 de Março";
 export const PROMO2_DEADLINE = "16 a 25 de Março";
 export const PROMO3_DEADLINE = "25 de Março";
 
-export const DEFAULT_PARTICIPANTS_COUNT = "09";
+export const DEFAULT_PARTICIPANTS_COUNT = "10";
 export const DEFAULT_CATEGORY_COUNTS = [
   { label: 'U06', count: 0 },
   { label: 'U08', count: 2 },
-  { label: 'U10', count: 2 },
-  { label: 'U12', count: 5 }
+  { label: 'U10', count: 1 },
+  { label: 'U12', count: 7 }
 ];
 
 export const FEATURED_PLAYERS: Player[] = [
