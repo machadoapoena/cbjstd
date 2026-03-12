@@ -27,10 +27,10 @@ export const PROMO_DEADLINE = "15 de Março";
 export const PROMO2_DEADLINE = "16 a 25 de Março";
 export const PROMO3_DEADLINE = "25 de Março";
 
-export const DEFAULT_PARTICIPANTS_COUNT = "06";
+export const DEFAULT_PARTICIPANTS_COUNT = "07";
 export const DEFAULT_CATEGORY_COUNTS = [
   { label: 'U06', count: 0 },
-  { label: 'U08', count: 0 },
+  { label: 'U08', count: 1 },
   { label: 'U10', count: 1 },
   { label: 'U12', count: 5 }
 ];
