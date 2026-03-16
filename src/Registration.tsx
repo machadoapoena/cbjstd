@@ -34,6 +34,28 @@ const Registration: React.FC<RegistrationProps> = ({ onOpenRegistration }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 items-stretch">
           {/* Lote Antecipado */}
+          <div className="relative group p-8 rounded-2xl bg-white/5 border border-white/10 opacity-50 transition-all duration-500 flex flex-col">
+            <div className="flex items-center gap-3 mb-6 relative z-10">
+              <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-neutral-500">
+                <Timer size={24} />
+              </div>
+              <div>
+                <h3 className="font-oswald text-xl font-bold uppercase text-neutral-400">Lote Antecipado</h3>
+                <p className="text-neutral-500 text-xs font-bold uppercase tracking-widest line-through">Até {PROMO_DEADLINE}</p>
+              </div>
+            </div>
+
+            <div className="mb-4 relative z-10">
+              <span className="text-xs text-neutral-600 uppercase font-black tracking-widest block mb-1">Encerrado</span>
+              <span className="text-5xl font-oswald font-bold text-neutral-600 block">{PROMO_PRICE}</span>
+            </div>
+
+            <div className="mt-auto pt-6 border-t border-white/5">
+              <p className="text-xs text-neutral-600 font-bold uppercase tracking-wider">Lote finalizado.</p>
+            </div>
+          </div>
+
+          {/* Lote Intermediário */}
           <div className="relative group p-8 rounded-2xl bg-white/5 border border-lime-400/30 hover:border-lime-400 transition-all duration-500 flex flex-col">
             <div className="absolute top-4 right-4 px-3 py-1 bg-lime-400 text-black text-[10px] font-black uppercase rounded-full animate-pulse z-20">
               Promoção Ativa
@@ -44,40 +66,18 @@ const Registration: React.FC<RegistrationProps> = ({ onOpenRegistration }) => {
                 <Timer size={24} />
               </div>
               <div>
-                <h3 className="font-oswald text-xl font-bold uppercase">Lote Antecipado</h3>
-                <p className="text-neutral-400 text-xs font-bold uppercase tracking-widest">Até {PROMO_DEADLINE}</p>
-              </div>
-            </div>
-
-            <div className="mb-4 relative z-10">
-              <span className="text-xs text-neutral-500 uppercase font-black tracking-widest block mb-1">Valor único</span>
-              <span className="text-5xl font-oswald font-bold text-white block">{PROMO_PRICE}</span>
-            </div>
-
-            <div className="mt-auto pt-6 border-t border-white/5">
-              <p className="text-xs text-lime-400/70 font-bold uppercase tracking-wider">Desconto máximo por antecipação.</p>
-            </div>
-          </div>
-
-          {/* Lote Intermediário */}
-          <div className="relative group p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-500 flex flex-col">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-neutral-400">
-                <Timer size={24} />
-              </div>
-              <div>
                 <h3 className="font-oswald text-xl font-bold uppercase">Lote Intermediário</h3>
                 <p className="text-neutral-400 text-xs font-bold uppercase tracking-widest">{PROMO2_DEADLINE}</p>
               </div>
             </div>
 
-            <div className="mb-4">
+            <div className="mb-4 relative z-10">
               <span className="text-xs text-neutral-500 uppercase font-black tracking-widest block mb-1">Valor único</span>
-              <span className="text-5xl font-oswald font-bold text-white/70 block">{PROMO2_PRICE}</span>
+              <span className="text-5xl font-oswald font-bold text-white block">{PROMO2_PRICE}</span>
             </div>
 
             <div className="mt-auto pt-6 border-t border-white/5">
-              <p className="text-xs text-neutral-500 font-bold uppercase tracking-wider">Desconto intermediário.</p>
+              <p className="text-xs text-lime-400/70 font-bold uppercase tracking-wider">Desconto intermediário ativo.</p>
             </div>
           </div>
 
